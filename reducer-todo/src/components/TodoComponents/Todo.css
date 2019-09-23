@@ -1,0 +1,46 @@
+h1 {
+    color:navy;
+}
+
+.Header {
+    margin: 0 auto;
+     width: 75%;
+     /* border: 2px solid magenta; */
+    }
+
+.todo-list {
+    width: 75%;
+    margin: 0 auto;
+    /* border: 2px solid orangered; */
+  }
+
+
+.todo {
+    border: 3px dotted navy;
+    width: 45%;
+    text-align: left;
+    margin: 8px 0;
+    padding-left: 8px;
+  }
+  
+  .todo.completed {
+    background-color:magenta;
+    text-decoration: line-through;
+  }
+
+  
+  form {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  form > input {
+    border: 0;
+    padding: 6px 0;
+    font-size: 1rem;
+    width: 240px;
+    outline: 0;
+    background-color: rgb(209, 232, 240);
+    border-bottom: 1px solid navy;
+    margin-right: 8px;
+  }
