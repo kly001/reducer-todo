@@ -46,7 +46,7 @@ export const initialState = {
       case CLEAR_COMPLETED:
         return {
           ...state,
-          groceries: state.groceries.filter(todo => !todo.purchased)
+         todos: state.groceries.filter(todo => !todo.purchased)
         };
       default:
         return state;

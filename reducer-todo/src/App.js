@@ -9,13 +9,13 @@ import "./components/TodoComponents/Todo.css"
 const App = () => {
   const [state,dispatch] = useReducer(todoReducer, initialState);
 
-  const addTodo = (event, item) => {
+  const addTodo = (event, todo) => {
     event.preventDefault()
-    dispatch({type:ADD_TODO, payload: item}) 
+    dispatch({type:ADD_TODO, payload: todo}) 
   }
 
-  const toggleTodo = itemId => {
-    dispatch({type: TOGGLE_TODO, payload: itemId})
+  const toggleTodo = todoId => {
+    dispatch({type: TOGGLE_TODO, payload: todoId})
   }
 
   const clearCompleted = event => {
