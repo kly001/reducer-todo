@@ -23,7 +23,7 @@ export const initialState = {
       case ADD_TODO:
         const newTodo = {
           name: action.payload,
-          purchased: false,
+          completed: false,
           id: Date.now(),
         };
         return {
