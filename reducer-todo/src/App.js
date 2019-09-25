@@ -15,12 +15,12 @@ const App = () => {
   }
 
   const toggleTodo = todoId => {
-    dispatch({type: TOGGLE_TODO, payload: todoId})
+    dispatch({type:TOGGLE_TODO, payload: todoId})
   }
 
   const clearCompleted = event => {
     event.preventDefault()
-    dispatch({type: CLEAR_COMPLETED})
+    dispatch({type:CLEAR_COMPLETED})
   }
 
   return (
